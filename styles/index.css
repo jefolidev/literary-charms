@@ -1,1 +1,6 @@
 @import url(global.css);
+
+@import url(components/button.css);
+@import url(components/card.css);
+
+@import url(sections/hero.css);

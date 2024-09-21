@@ -1,0 +1,15 @@
+.btn-primary {
+  background-color: var(--pink-dark);
+
+  &:hover {
+    background-color: var(--pink-base);
+  }
+}
+
+.btn-secondary {
+  background-color: var(--blue-dark);
+
+  &:hover {
+    background-color: var(--blue-mid);
+  }
+}
