@@ -1,6 +1,10 @@
 .hero {
+  background-image: url(../../assets/ui/hero-background.png);
+  background-size: cover;
+  background-position: center;
+
   width: 100%;
-  max-width: 80rem;
+  height: 100vh;
 
   margin-inline: auto;
   padding-inline: 10rem;
@@ -64,6 +68,98 @@
   }
 }
 
+.subtitle {
+  max-width: 71rem;
+
+  display: block;
+
+  text-align: center;
+  margin-inline: auto;
+
+  padding-block: 10rem;
+
+  position: relative;
+
+  font-size: var(--text-subtitle);
+  font-weight: var(--font-base);
+  line-height: 4rem;
+
+  & span,
+  p {
+    transition: all 0.5s;
+    color: rgba(226, 231, 233, 0.5);
+  }
+
+  & p {
+    font-weight: var(--font-bold);
+    display: inline-block;
+  }
+
+  & [aria-label='book'] {
+    top: 5rem;
+    left: 50%;
+    transform: scale(0);
+    transition: transform 0.5s;
+  }
+
+  & [aria-label='ouija'] {
+    left: 2%;
+    transform: scale(0);
+    transition: transform 0.5s;
+  }
+
+  & [aria-label='crystal-ball'] {
+    right: 2%;
+    transform: scale(0);
+    transition: transform 0.5s;
+  }
+
+  &:hover {
+    & [aria-label='book'] {
+      transform: scale(1);
+      transition: transform 0.5s;
+    }
+    & [aria-label='ouija'] {
+      transform: scale(1);
+      transition: transform 0.5s;
+      transition-delay: 0.5s;
+    }
+
+    & [aria-label='crystal-ball'] {
+      transform: scale(1);
+      transition: transform 0.5s;
+      transition-delay: 1s;
+    }
+
+    & span:nth-child(1) {
+      transition-delay: 0s;
+
+      color: var(--text-body);
+      & p {
+        transition-delay: 0s;
+        color: var(--blue-light);
+      }
+    }
+    & span:nth-child(2) {
+      color: var(--text-body);
+      transition-delay: 0.5s;
+
+      & p {
+        transition-delay: 0.5s;
+        color: var(--blue-light);
+      }
+    }
+    & span:nth-child(3) {
+      transition-delay: 1s;
+      color: var(--text-body);
+      & p {
+        transition-delay: 1s;
+        color: var(--blue-light);
+      }
+    }
+  }
+}
+
 @keyframes heroFade {
   0% {
     opacity: 0;
@@ -79,6 +175,12 @@
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textOpacity {
+  0% {
     opacity: 1;
   }
 }

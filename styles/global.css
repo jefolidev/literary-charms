@@ -39,8 +39,9 @@
 
   --font-raleway: 'Raleway', system-ui;
 
-  --font-bold: 700;
+  --font-base: 500;
   --font-medium: 600;
+  --font-bold: 700;
 }
 
 *,
@@ -55,7 +56,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--shape-background);
 }
 
@@ -185,11 +186,12 @@ a {
   width: 5rem;
   height: 5rem;
 
+  position: absolute;
+
   &[aria-label='book'] {
     --url: url(../assets/ui/mystery-opened-spellbook.png);
 
-    transition: transform 500ms;
-
+    rotate: 10deg;
     &:hover {
       transform: scale(1.1) rotate(10deg);
     }
@@ -198,8 +200,7 @@ a {
   &[aria-label='ouija'] {
     --url: url(../assets/ui/mystery-ouija-planchette.png);
 
-    transition: transform 500ms;
-
+    rotate: 100deg;
     &:hover {
       transform: scale(1.1) rotate(10deg);
     }
@@ -208,7 +209,8 @@ a {
   &[aria-label='crystal-ball'] {
     --url: url(../assets/ui/mystery-crystal-ball.png);
 
-    transition: transform 500ms;
+    rotate: -15deg;
+
     &:hover {
       transform: scale(1.1) rotate(10deg);
     }
