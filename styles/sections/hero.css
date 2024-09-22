@@ -66,6 +66,10 @@
       animation: heroFade 6s;
     }
   }
+
+  & .blur:nth-child(1) {
+    top: 0;
+  }
 }
 
 .subtitle {
@@ -157,6 +161,11 @@
         color: var(--blue-light);
       }
     }
+  }
+
+  & .blur {
+    top: 0;
+    left: 4rem;
   }
 }
 

@@ -216,3 +216,14 @@ a {
     }
   }
 }
+
+.blur {
+  width: 33.625rem;
+  height: 33.625rem;
+
+  border-radius: 33.625rem;
+  background: var(--pink-pink-low, #3f0f41);
+  filter: blur(434px);
+
+  position: absolute;
+}
