@@ -1,0 +1,200 @@
+.gifts {
+  padding-top: 8rem;
+  & header {
+    text-align: center;
+
+    & .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      padding-block: 0.5rem;
+
+      & img {
+        width: 2rem;
+        height: 2rem;
+
+        filter: drop-shadow(0px 0px 28px rgba(143, 59, 158, 1));
+      }
+
+      & h2 {
+        font-size: var(--title-sm);
+      }
+      & span {
+        font-size: var(--text-md);
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+
+    & .book {
+      background-image: url(../../assets/ui/book.png);
+      background-size: cover;
+
+      position: absolute;
+
+      top: 8rem;
+      left: 32%;
+
+      max-width: 29.1875rem;
+      width: 100%;
+      height: 38.5625rem;
+
+      z-index: 10;
+    }
+
+    .book-arrow {
+      max-width: 10.90625rem;
+      height: auto;
+
+      position: absolute;
+      top: 10rem;
+      left: 30rem;
+      transition: all 0.5s;
+    }
+
+    .book:hover ~ .book-arrow {
+      top: 6rem;
+      left: 18rem;
+      transform: rotate(12deg);
+    }
+
+    .book:hover ~ .bookmark-yellow {
+      top: 3rem;
+      right: 19rem;
+      transform: rotate(12deg);
+    }
+    .book:hover ~ .bookmark-purple {
+      top: 10rem;
+      right: 12rem;
+      transform: rotate(22deg);
+    }
+
+    & .bookmark-purple,
+    .bookmark-yellow {
+      max-width: 13rem;
+      width: 100%;
+      height: auto;
+
+      position: absolute;
+
+      right: 0;
+
+      transition: all 0.5s;
+    }
+
+    & .bookmark-yellow {
+      top: 10rem;
+      right: 30rem;
+      z-index: -11;
+    }
+
+    & .bookmark-purple {
+      top: 10rem;
+      right: 30rem;
+      z-index: 0;
+    }
+
+    & .markbook-arrow {
+      position: absolute;
+
+      top: 32rem;
+      right: 30rem;
+
+      transition: all 0.5s;
+    }
+
+    .book:hover ~ .markbook-arrow {
+      top: 44rem;
+      right: 15rem;
+    }
+
+    & .pin {
+      position: absolute;
+      max-width: 13.875rem;
+      height: auto;
+
+      top: 30rem;
+      left: 30rem;
+      transform: rotate(-8deg);
+      transition: all 0.5s;
+    }
+
+    .pin-arrow {
+      max-width: 6.55325rem;
+      height: auto;
+
+      position: absolute;
+      top: 30rem;
+      left: 30rem;
+      transition: all 0.5s;
+    }
+
+    .book:hover ~ .pin-arrow {
+      top: 30rem;
+      left: 15rem;
+    }
+
+    .book:hover ~ .pin {
+      top: 35rem;
+      left: 18rem;
+      transform: rotate(-8deg);
+    }
+
+    & span:nth-of-type(1) {
+      position: absolute;
+      top: 10rem;
+      left: 30rem;
+      transition: all 0.5s;
+    }
+
+    .book:hover ~ span:nth-of-type(1) {
+      top: 3rem;
+      left: 14rem;
+    }
+
+    & span:nth-of-type(2) {
+      position: absolute;
+
+      top: 30rem;
+      left: 30rem;
+      transition: all 0.5s;
+    }
+
+    .book:hover ~ span:nth-of-type(2) {
+      top: 28rem;
+      left: 14rem;
+    }
+
+    & span:nth-of-type(3) {
+      position: absolute;
+      top: 32rem;
+      right: 30rem;
+    }
+
+    .book:hover ~ span:nth-of-type(3) {
+      top: 54rem;
+      right: 19rem;
+      transition: all 0.3s;
+    }
+  }
+  .blur {
+    padding-block: 8rem;
+    z-index: 0;
+  }
+}
+@keyframes yellowBookMarker {
+  from {
+    top: 10rem;
+    left: 32%;
+  }
+
+  to {
+    top: 3rem;
+    right: 19rem;
+    transform: rotate(12deg);
+  }
+}
