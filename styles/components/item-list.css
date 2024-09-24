@@ -1,0 +1,27 @@
+.item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .card-item {
+    display: flex;
+    gap: 1rem;
+
+    & img {
+      background-image: var(--url);
+      background-position: center;
+      background-size: cover;
+
+      width: 1rem;
+      height: 1rem;
+    }
+
+    span {
+      font-family: var(--font-raleway);
+      font-size: var(--text-xs);
+      font-weight: 400;
+      line-height: 140%;
+      color: var(--text-body);
+    }
+  }
+}

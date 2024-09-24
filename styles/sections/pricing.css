@@ -1,0 +1,26 @@
+.pricing {
+  height: 100%;
+
+  background-image: url(../../assets/ui/pricing-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  & header {
+    /* padding-top: 40rem; */
+    text-align: center;
+    font-size: var(--title-sm);
+  }
+
+  & .card-wrapper {
+    padding-block: 8rem;
+    margin-inline: auto;
+  }
+
+  .bunny {
+    position: absolute;
+    top: 4rem;
+    left: 42%;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+}

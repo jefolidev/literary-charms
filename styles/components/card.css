@@ -1,61 +1,22 @@
 .card-wrapper {
   display: flex;
   width: 100%;
+  height: 100vh;
   position: relative;
 
   & .card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    &:after {
-      content: '';
+    position: absolute;
 
-      width: 18rem;
-      height: 26rem;
-
-      top: -1rem;
-      right: -1rem;
-      position: absolute;
-      background-color: var(--shape-hover);
-      box-shadow: 0 0 15px var(--shape-hover);
-      filter: blur(40px);
-      opacity: 0;
-    }
-
-    &:hover:after {
-      opacity: 1;
-    }
-
-    &:nth-child(1),
-    &:nth-child(3) {
-      top: 4rem;
-    }
-
-    &:nth-child(1) {
-      rotate: -8deg;
-
-      &:hover {
-        z-index: 2;
-      }
-    }
-
-    &:nth-child(2) {
-      z-index: 1;
-    }
-
-    &:nth-child(3) {
-      rotate: 8deg;
-      &:hover {
-        z-index: 2;
-      }
-    }
-
-    position: relative;
     background-color: var(--shape-base);
 
     width: 18rem;
     height: 26rem;
 
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1.5rem;
 
     border: 2px solid var(--shape-stroke);
@@ -64,10 +25,169 @@
       transform 500ms,
       background 400ms;
 
+    z-index: 2;
+
+    & header {
+      text-align: start;
+
+      & span {
+        color: var(--blue-light);
+        font-size: var(--title-xs);
+      }
+
+      & h3 {
+        font-size: var(--title-md);
+        color: var(--text-title);
+
+        padding-top: 1rem;
+
+        display: flex;
+        align-items: end;
+        gap: 1px;
+
+        & p {
+          font-size: var(--title-xs);
+        }
+      }
+      & h3 + span {
+        color: var(--text-label);
+      }
+    }
+    & .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
     &:hover {
       background-color: var(--shape-hover);
 
       transform: translateY(-1rem);
     }
+
+    &:nth-child(1) {
+      top: 11rem;
+      left: 19%;
+
+      rotate: -8deg;
+      z-index: 0;
+
+      &:hover {
+        z-index: 2;
+      }
+    }
+    &:nth-child(2) {
+      top: 11rem;
+      right: 17%;
+      z-index: 0;
+
+      rotate: 8deg;
+      &:hover {
+        z-index: 2;
+      }
+    }
+  }
+
+  & .card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    & header {
+      text-align: start;
+
+      & .popular-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        & span {
+          color: var(--pink-light);
+          font-size: var(--title-xs);
+          flex: 2;
+        }
+
+        & .popular-tag {
+          display: flex;
+          align-items: center;
+          flex: 1;
+
+          background-color: var(--shape-stroke);
+
+          border-radius: 1rem;
+
+          text-align: center;
+
+          & span {
+            font-family: var(--font-raleway);
+            font-size: var(--text-tag);
+            color: var(--text-body);
+            text-transform: uppercase;
+            font-weight: var(--font-bold);
+            letter-spacing: 0.03125rem;
+          }
+        }
+      }
+
+      & h3 {
+        padding-top: 1rem;
+        font-size: var(--title-md);
+        color: var(--text-title);
+
+        display: flex;
+        align-items: end;
+        gap: 1px;
+
+        & p {
+          font-size: var(--title-xs);
+        }
+      }
+      & h3 + span {
+        font-size: var(--title-xs);
+        color: var(--text-label);
+      }
+    }
+
+    display: flex;
+    position: absolute;
+    background-color: var(--shape-hover);
+
+    width: 18rem;
+    height: 26rem;
+
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+
+    border: 2px solid var(--shape-stroke);
+
+    transition: all 0.5s;
+
+    top: 7rem;
+    left: 40%;
+
+    z-index: 10;
+    &:hover {
+      background-color: var(--shape-hover);
+
+      transform: translateY(-1rem);
+    }
+    &:hover + .bunny {
+      transform: translateY(-1rem);
+    }
+  }
+
+  .card:nth-child(1):hover ~ .card-main {
+    background-color: var(--shape-base);
+  }
+  .card:nth-child(2):hover ~ .card-main {
+    background-color: var(--shape-base);
+  }
+
+  button {
+    width: 100%;
   }
 }

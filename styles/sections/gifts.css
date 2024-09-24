@@ -1,5 +1,6 @@
 .gifts {
-  padding-top: 8rem;
+  height: 100vh;
+  margin-block: 20rem;
   & header {
     text-align: center;
 
@@ -28,6 +29,7 @@
   }
 
   .content {
+    height: 100vh;
     position: relative;
 
     & .book {
@@ -184,6 +186,9 @@
   .blur {
     padding-block: 8rem;
     z-index: 0;
+    max-width: 29.1875rem;
+    transform: scale(2);
+    top: 8rem;
   }
 }
 @keyframes yellowBookMarker {
