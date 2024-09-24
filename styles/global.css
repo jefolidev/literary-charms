@@ -74,6 +74,8 @@
 
   font-family: var(--font-raleway);
   color: var(--text-body);
+
+  overflow-x: hidden;
 }
 
 body {
