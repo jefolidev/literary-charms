@@ -3,6 +3,7 @@
   margin-block: 20rem;
 
   @media (max-width: 480px) {
+    height: 70vh;
     margin-block: 0rem;
   }
   & header {
@@ -252,11 +253,13 @@
       position: absolute;
 
       top: 11rem;
-      right: 40%;
+      right: 30%;
       z-index: 5;
 
-      @media (width <= 320px) {
-        top: 6rem;
+      @media (max-width: 475px) {
+        top: 4rem;
+      }
+      @media (max-width: 320px) {
         right: 25%;
       }
     }
@@ -277,7 +280,8 @@
       z-index: 2;
 
       @media (max-width: 480px) {
-        right: 30%;
+        top: 3rem;
+        right: 18%;
       }
       @media (max-width: 320px) {
         top: 6rem;
@@ -291,7 +295,8 @@
       right: 30%;
 
       @media (max-width: 480px) {
-        right: 24%;
+        top: 5rem;
+        right: 9%;
       }
 
       @media (max-width: 320px) {
@@ -312,6 +317,7 @@
         width: 5rem;
         height: auto;
 
+        top: 2.5rem;
         left: 20%;
       }
       @media (max-width: 320px) {
@@ -332,7 +338,8 @@
         width: 5rem;
         height: auto;
 
-        right: 28%;
+        top: 16rem;
+        right: 12%;
       }
       @media (max-width: 320px) {
         width: 3rem;
@@ -351,10 +358,11 @@
       left: 28%;
 
       @media (max-width: 768px) {
-        width: 4rem;
+        width: 3rem;
         height: auto;
 
-        left: 2%;
+        top: 9.5rem;
+        left: 12%;
       }
       @media (max-width: 320px) {
         width: 3rem;
@@ -374,7 +382,8 @@
       left: 34%;
 
       @media (max-width: 480px) {
-        left: 12%;
+        top: 13rem;
+        left: 18%;
       }
 
       @media (max-width: 320px) {
@@ -391,7 +400,7 @@
       font-size: var(--text-xs);
 
       @media (max-width: 480px) {
-        top: 9rem;
+        top: 1.5rem;
         left: 10%;
       }
 
@@ -408,7 +417,8 @@
       font-size: var(--text-xs);
 
       @media (max-width: 480px) {
-        left: 4%;
+        top: 8.5rem;
+        left: 10%;
       }
 
       @media (max-width: 320px) {
@@ -422,8 +432,11 @@
       top: 28.5rem;
       right: 32%;
 
-      @media (max-width: 320px) {
+      @media (max-width: 480px) {
         top: 21.5rem;
+        right: 18%;
+      }
+      @media (max-width: 320px) {
         right: 15%;
       }
     }
