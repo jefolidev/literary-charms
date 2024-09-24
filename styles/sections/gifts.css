@@ -334,7 +334,7 @@
 
         right: 28%;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 320px) {
         width: 3rem;
 
         top: 18rem;
