@@ -18,6 +18,8 @@
     @media (min-width: 1024px) {
       display: none;
     }
+
+    overflow-x: hidden;
   }
 
   @media (width < 1366px) {

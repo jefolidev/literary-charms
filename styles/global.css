@@ -74,8 +74,6 @@
 
   font-family: var(--font-raleway);
   color: var(--text-body);
-
-  overflow-x: hidden;
 }
 
 body {
@@ -208,6 +206,10 @@ a {
 
   position: absolute;
   z-index: -1;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 li,

@@ -11,7 +11,7 @@
     & span {
       font-size: var(--title-md);
 
-      @media (max-width: 320px) {
+      @media (max-width: 480px) {
         font-size: var(--text-sm);
       }
     }
@@ -29,7 +29,7 @@
 
         filter: drop-shadow(0px 0px 28px rgba(143, 59, 158, 1));
 
-        @media (max-width: 320px) {
+        @media (max-width: 480px) {
           width: 1rem;
           height: 1rem;
         }
