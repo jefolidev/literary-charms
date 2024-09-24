@@ -77,7 +77,6 @@
 }
 
 body {
-  overflow-x: hidden;
   background-color: var(--shape-background);
 }
 
