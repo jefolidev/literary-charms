@@ -10,7 +10,7 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  @media (max-width: 480px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
     gap: 2.5rem;
 
