@@ -13,6 +13,14 @@
   bottom: 0;
 }
 
-.center {
-  left: 30%;
+.desktop-only {
+  @media (width < 1024px) {
+    display: none;
+  }
+}
+
+.not-phone {
+  @media (max-width: 480px) {
+    display: none;
+  }
 }

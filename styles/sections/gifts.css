@@ -1,9 +1,20 @@
 .gifts {
   height: 100vh;
   margin-block: 20rem;
+
+  @media (max-width: 480px) {
+    margin-block: 0rem;
+  }
   & header {
     text-align: center;
 
+    & span {
+      font-size: var(--title-md);
+
+      @media (max-width: 320px) {
+        font-size: var(--text-sm);
+      }
+    }
     & .title-wrapper {
       display: flex;
       align-items: center;
@@ -17,13 +28,15 @@
         height: 2rem;
 
         filter: drop-shadow(0px 0px 28px rgba(143, 59, 158, 1));
+
+        @media (max-width: 320px) {
+          width: 1rem;
+          height: 1rem;
+        }
       }
 
       & h2 {
         font-size: var(--title-sm);
-      }
-      & span {
-        font-size: var(--text-md);
       }
     }
   }
@@ -46,6 +59,10 @@
       height: 38.5625rem;
 
       z-index: 10;
+
+      @media (max-width: 1024px) {
+        left: 26%;
+      }
     }
 
     .book-arrow {
@@ -68,11 +85,21 @@
       top: 3rem;
       right: 19rem;
       transform: rotate(12deg);
+
+      @media (max-width: 1024px) {
+        right: 8rem;
+        top: 1rem;
+      }
     }
+
     .book:hover ~ .bookmark-purple {
       top: 10rem;
       right: 12rem;
       transform: rotate(22deg);
+
+      @media (max-width: 1024px) {
+        right: 4rem;
+      }
     }
 
     & .bookmark-purple,
@@ -92,12 +119,19 @@
       top: 10rem;
       right: 30rem;
       z-index: -11;
+      @media (max-width: 1024px) {
+        right: 25rem;
+      }
     }
 
     & .bookmark-purple {
       top: 10rem;
       right: 30rem;
       z-index: 0;
+
+      @media (max-width: 1024px) {
+        right: 25rem;
+      }
     }
 
     & .markbook-arrow {
@@ -112,6 +146,9 @@
     .book:hover ~ .markbook-arrow {
       top: 44rem;
       right: 15rem;
+      @media (max-width: 1024px) {
+        right: 8rem;
+      }
     }
 
     & .pin {
@@ -138,12 +175,22 @@
     .book:hover ~ .pin-arrow {
       top: 30rem;
       left: 15rem;
+
+      @media (max-width: 1024px) {
+        top: 30rem;
+        left: 9rem;
+      }
     }
 
     .book:hover ~ .pin {
       top: 35rem;
       left: 18rem;
       transform: rotate(-8deg);
+
+      @media (max-width: 1024px) {
+        top: 35rem;
+        left: 12rem;
+      }
     }
 
     & span:nth-of-type(1) {
@@ -169,23 +216,226 @@
     .book:hover ~ span:nth-of-type(2) {
       top: 28rem;
       left: 14rem;
+      @media (max-width: 1024px) {
+        top: 27rem;
+        left: 9rem;
+      }
     }
 
     & span:nth-of-type(3) {
       position: absolute;
       top: 32rem;
       right: 30rem;
+      @media (max-width: 1024px) {
+        right: 25rem;
+      }
     }
 
     .book:hover ~ span:nth-of-type(3) {
       top: 54rem;
       right: 19rem;
-      transition: all 0.3s;
+      transition: all 0.5s;
+
+      @media (max-width: 1024px) {
+        right: 12rem;
+        top: 55rem;
+      }
     }
   }
+
+  .phone-gifts {
+    position: relative;
+    & .book {
+      width: 9.82431rem;
+      height: 12.97981rem;
+
+      position: absolute;
+
+      top: 11rem;
+      right: 40%;
+      z-index: 5;
+
+      @media (width <= 320px) {
+        top: 6rem;
+        right: 25%;
+      }
+    }
+
+    & .bookmark-yellow,
+    .bookmark-purple {
+      width: 3.64994rem;
+      height: 11.30738rem;
+
+      position: absolute;
+    }
+
+    & .bookmark-yellow {
+      transform: rotate(11.717deg);
+
+      top: 10rem;
+      right: 35%;
+      z-index: 2;
+
+      @media (max-width: 480px) {
+        right: 30%;
+      }
+      @media (max-width: 320px) {
+        top: 6rem;
+        right: 14%;
+      }
+    }
+    & .bookmark-purple {
+      transform: rotate(22.093deg);
+
+      top: 12rem;
+      right: 30%;
+
+      @media (max-width: 480px) {
+        right: 24%;
+      }
+
+      @media (max-width: 320px) {
+        top: 7rem;
+        right: 7%;
+      }
+    }
+
+    & .book-arrow {
+      width: 3.5rem;
+      height: 0.5rem;
+
+      position: absolute;
+      top: 10rem;
+      left: 35%;
+
+      @media (max-width: 768px) {
+        width: 5rem;
+        height: auto;
+
+        left: 20%;
+      }
+      @media (max-width: 320px) {
+        top: 5rem;
+        left: 15%;
+      }
+    }
+
+    & .markbook-arrow {
+      width: 3rem;
+      height: 3rem;
+
+      position: absolute;
+      top: 23rem;
+      right: 32%;
+
+      @media (max-width: 768px) {
+        width: 5rem;
+        height: auto;
+
+        right: 28%;
+      }
+      @media (max-width: 768px) {
+        width: 3rem;
+
+        top: 18rem;
+        right: 14%;
+      }
+    }
+
+    & .pin-arrow {
+      width: 2rem;
+      height: auto;
+
+      position: absolute;
+      top: 16rem;
+      left: 28%;
+
+      @media (max-width: 768px) {
+        width: 4rem;
+        height: auto;
+
+        left: 2%;
+      }
+      @media (max-width: 320px) {
+        width: 3rem;
+
+        top: 12rem;
+        left: 2%;
+      }
+    }
+
+    .pin {
+      width: 4.5rem;
+      height: auto;
+      transform: rotate(-7.548deg);
+
+      position: absolute;
+      top: 20rem;
+      left: 34%;
+
+      @media (max-width: 480px) {
+        left: 12%;
+      }
+
+      @media (max-width: 320px) {
+        top: 15rem;
+      }
+    }
+
+    & span:nth-of-type(1) {
+      position: absolute;
+
+      top: 8.5rem;
+      left: 30%;
+
+      font-size: var(--text-xs);
+
+      @media (max-width: 480px) {
+        top: 9rem;
+        left: 10%;
+      }
+
+      @media (max-width: 320px) {
+        top: 4rem;
+        left: 6%;
+      }
+    }
+    & span:nth-of-type(2) {
+      position: absolute;
+      top: 14.5rem;
+      left: 26%;
+
+      font-size: var(--text-xs);
+
+      @media (max-width: 480px) {
+        left: 4%;
+      }
+
+      @media (max-width: 320px) {
+        top: 11rem;
+      }
+    }
+    & span:nth-of-type(3) {
+      position: absolute;
+
+      font-size: var(--text-xs);
+      top: 28.5rem;
+      right: 32%;
+
+      @media (max-width: 320px) {
+        top: 21.5rem;
+        right: 15%;
+      }
+    }
+
+    @media (width >= 1024px) {
+      display: none;
+    }
+  }
+
   .blur {
     padding-block: 8rem;
-    z-index: 0;
+    z-index: -1;
     max-width: 29.1875rem;
     transform: scale(2);
     top: 8rem;

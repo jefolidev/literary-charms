@@ -16,7 +16,12 @@
   <body>
     <section class="hero">
       <header>
-        <img src="assets/icons/logo-horizontal.svg" alt="" />
+        <img class="logo-phone" src="assets/icons/logo-symbol.svg" alt="" />
+        <img
+          class="desktop-only"
+          src="assets/icons/logo-horizontal.svg"
+          alt=""
+        />
         <button class="btn-primary">Assinar</button>
       </header>
 
@@ -49,9 +54,9 @@
         <p>encantadora</p>
       </span>
 
-      <div id="mistery-item" aria-label="book"></div>
-      <div id="mistery-item" aria-label="ouija"></div>
-      <div id="mistery-item" aria-label="crystal-ball"></div>
+      <div class="not-phone" id="mistery-item" aria-label="book"></div>
+      <div class="not-phone" id="mistery-item" aria-label="ouija"></div>
+      <div class="not-phone" id="mistery-item" aria-label="crystal-ball"></div>
 
       <div class="blur"></div>
     </section>
@@ -66,7 +71,33 @@
         <span>Recebe uma caixa surpresa todos os meses</span>
       </header>
 
-      <div class="content">
+      <div class="content desktop-only">
+        <img src="assets/ui/book.png" alt="" class="book" />
+        <img
+          src="assets/ui/bookmark-yellow.png"
+          alt=""
+          class="bookmark-yellow"
+        />
+        <img
+          src="assets/ui/bookmark-purple.png"
+          alt=""
+          class="bookmark-purple"
+        />
+
+        <span>Livro em capa dura</span>
+        <span>Broche exclusivo</span>
+        <span>Marca páginas temático</span>
+        <img src="assets/ui/markbook-arrow.png" alt="" class="markbook-arrow" />
+
+        <img src="assets/ui/arrow-book.png" alt="" class="book-arrow" />
+
+        <img src="assets/ui/pin-arrow.svg" alt="" class="pin-arrow" />
+        <img src="assets/ui/pin.png" alt="" class="pin" />
+
+        <div class="blur center"></div>
+      </div>
+
+      <div class="phone-gifts">
         <img src="assets/ui/book.png" alt="" class="book" />
         <img
           src="assets/ui/bookmark-yellow.png"
@@ -198,14 +229,14 @@
             <button class="btn-primary">Assinar semestral</button>
           </div>
         </div>
-        <img class="bunny" src="assets/ui/bunny.svg" />
+        <img class="bunny desktop-only" src="assets/ui/bunny.svg" />
       </div>
     </section>
 
     <footer>
       <div class="logo-wrapper">
         <img src="assets/icons/logo-horizontal.svg" alt="" />
-        <div class="divisor"></div>
+        <div class="divisor not-phone"></div>
         <div class="social-wrapper">
           <div class="icon instagram"></div>
           <div class="icon twitter"></div>

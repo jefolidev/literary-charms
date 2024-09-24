@@ -10,6 +10,15 @@ footer {
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 768px) {
+    gap: 4rem;
+  }
+
   .logo-wrapper {
     display: flex;
     flex-direction: column;
@@ -18,6 +27,10 @@ footer {
       display: flex;
       justify-content: space-around;
       position: relative;
+
+      @media (max-width: 480px) {
+        padding-block: 1rem;
+      }
 
       & .instagram {
         background-image: url(../../assets/icons/instagram.svg);

@@ -11,6 +11,19 @@
 
   position: relative;
 
+  & .logo-phone {
+    width: 4rem;
+    height: auto;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  @media (width < 1366px) {
+    padding-inline: 4rem;
+  }
+
   & header {
     display: flex;
     justify-content: space-between;
@@ -25,10 +38,18 @@
   }
 
   & .hero-content {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
     & .hero-text {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 2rem;
 
       text-align: center;
@@ -50,6 +71,11 @@
 
         font-size: var(--text-lg);
         animation: subtitleFade 5s;
+
+        @media (max-width: 480px) {
+          padding-block: 0rem;
+          font-size: var(--text-sm);
+        }
       }
     }
 
@@ -88,6 +114,20 @@
   font-weight: var(--font-base);
   line-height: 4rem;
 
+  @media (max-width: 480px) {
+    font-size: var(--text-md);
+    line-height: 1rem;
+    padding-block: 4rem;
+  }
+
+  @media (min-width: 480px) and (max-width: 768px) {
+    font-size: var(--text-md);
+    padding-inline: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    padding-inline: 5rem;
+  }
   & span,
   p {
     transition: all 0.5s;
@@ -110,12 +150,27 @@
     left: 2%;
     transform: scale(0);
     transition: transform 0.5s;
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      left: 10%;
+    }
+
+    @media (max-width: 1024px) {
+      left: 5%;
+    }
   }
 
   & [aria-label='crystal-ball'] {
     right: 2%;
     transform: scale(0);
     transition: transform 0.5s;
+
+    @media (min-width: 480px) and (max-width: 768px) {
+      right: 8%;
+    }
+    @media (max-width: 1024px) {
+      right: 5%;
+    }
   }
 
   &:hover {

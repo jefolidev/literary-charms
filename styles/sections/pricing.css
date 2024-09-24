@@ -14,6 +14,10 @@
   & .card-wrapper {
     padding-block: 8rem;
     margin-inline: auto;
+
+    @media (max-width: 480px) {
+      padding-block: 4rem;
+    }
   }
 
   .bunny {
