@@ -321,7 +321,7 @@
         left: 20%;
       }
       @media (max-width: 320px) {
-        top: 5rem;
+        top: 3rem;
         left: 15%;
       }
     }
@@ -405,7 +405,7 @@
       }
 
       @media (max-width: 320px) {
-        top: 4rem;
+        top: 2rem;
         left: 6%;
       }
     }
@@ -420,8 +420,9 @@
         top: 8.5rem;
         left: 10%;
       }
-
+      
       @media (max-width: 320px) {
+        left: 4%;
         top: 11rem;
       }
     }
