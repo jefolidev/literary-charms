@@ -92,7 +92,7 @@ a {
   width: 2.5rem;
   height: 2.5rem;
 
-  --icon: url('');
+  --icon: url();
 
   position: relative;
 
@@ -100,53 +100,7 @@ a {
 
   transition: background 0.5s;
 
-  &[aria-label='discord'] {
-    --icon: url('../assets/icons/discord.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/discord-hover.svg);
-    }
-  }
-
-  &[aria-label='twitter'] {
-    --icon: url('../assets/icons/twitter.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/twitter-hover.svg);
-    }
-  }
-
-  &[aria-label='facebook'] {
-    --icon: url('../assets/icons/facebook.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/facebook-hover.svg);
-    }
-  }
-
-  &[aria-label='instagram'] {
-    --icon: url('../assets/icons/instagram.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/instagram-hover.svg);
-    }
-  }
-
-  &[aria-label='whatsapp'] {
-    --icon: url('../assets/icons/whatsapp.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/whatsapp-hover.svg);
-    }
-  }
-
-  &[aria-label='mail'] {
-    --icon: url('../assets/icons/mail.svg');
-
-    &:hover {
-      --icon: url(../assets/icons/mail-hover.svg);
-    }
-  }
+  overflow: hidden;
 }
 
 #icon:before {

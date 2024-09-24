@@ -1,0 +1,127 @@
+footer {
+  background-image: url(../../assets/ui/book-trace-background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & .social-wrapper {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+
+      & .instagram {
+        background-image: url(../../assets/icons/instagram.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      & .instagram:hover {
+        background-image: url(../../assets/icons/instagram-hover.svg);
+      }
+
+      & .twitter {
+        background-image: url(../../assets/icons/twitter.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & .twitter:hover {
+        background-image: url(../../assets/icons/twitter-hover.svg);
+      }
+
+      & .facebook {
+        background-image: url(../../assets/icons/facebook.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & .facebook:hover {
+        background-image: url(../../assets/icons/facebook-hover.svg);
+      }
+
+      & .discord {
+        background-image: url(../../assets/icons/discord.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & .discord:hover {
+        background-image: url(../../assets/icons/discord-hover.svg);
+      }
+
+      & .whatsapp {
+        background-image: url(../../assets/icons/whatsapp.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & .whatsapp:hover {
+        background-image: url(../../assets/icons/whatsapp-hover.svg);
+      }
+
+      & .mail {
+        background-image: url(../../assets/icons/mail.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      & .mail:hover {
+        background-image: url(../../assets/icons/mail-hover.svg);
+      }
+
+      & .icon {
+        position: relative;
+      }
+    }
+
+    & .divisor {
+      width: 16.5rem;
+      height: 0.0625rem;
+      margin-block: 1.5rem;
+      background-color: white;
+    }
+  }
+
+  & nav {
+    display: flex;
+    gap: 3rem;
+    & .col-1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    & .col-2 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+}
